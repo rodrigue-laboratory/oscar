@@ -1,15 +1,15 @@
-# Biology Cobot Platform
+# OSCAR Platform
 
-This repository provides the open-source implementation of the **Biology Cobot System**, a versatile, modular, and affordable collaborative robot platform for biological laboratory automation.
+This repository provides the open-source implementation of the **OSCAR System**, a versatile, modular, and affordable collaborative robot platform for biological laboratory automation.
 
-![Biology Cobot System](./doc/gamma-protocol-initial-setup.jpg)
+![OSCAR System](./doc/gamma-protocol-initial-setup.jpg)
 
 It contains instructions for setting up all required ROS packages and configuration files to reproduce the protocols described in our manuscript.
 
 The platform automates multi-step molecular biology workflows:
-- PCR Amplification and Validation (*Protocol Alpha*)
-- Gibson Assembly and Bacterial Transformation (*Protocol Beta*)
-- Colony Picking and Construct Validation (*Protocol Gamma*)
+- PCR Amplification and Validation (*Protocol #1 - Alpha*)
+- Gibson Assembly and Bacterial Transformation (*Protocol #2 - Beta*)
+- Colony Picking and Construct Validation (*Protocol #3 - Gamma*)
 
 
 ## Hardware
@@ -33,7 +33,7 @@ The Biology Cobot platform is built from accessible, commercially available, and
 
 ## Software
 
-The Biology Cobot platform relies on the **Robot Operating System (ROS)** and associated motion planning frameworks.
+The platform relies on the **Robot Operating System (ROS)** and associated motion planning frameworks.
 
 The reference implementation has been developed and tested on:
 - Ubuntu 20.04 LTS
@@ -46,11 +46,11 @@ The reference implementation has been developed and tested on:
 | [cartesian\_controllers](https://github.com/captain-yoshi/cartesian_controllers/tree/c1526e5d7abed7066e93afded14b0eb7c1e49a3e)                 | Cartesian motion/impedance controllers.               |
 | [control\_msgs](https://github.com/captain-yoshi/control_msgs/tree/c776cc61bcfa32ac3b1cbf107050abbcb66e8f59)                                   | ROS control message/action definitions.               |
 | [deterministic\_trac\_ik](https://github.com/captain-yoshi/deterministic_trac_ik/tree/f80c3d472f5b7dd98c12a9aa33b2d7804efe23c2)                | Deterministic TRAC-IK MoveIt kinematics plugin.       |
-| [mimik\_description](https://github.com/mimik-robotics/mimik_description/tree/730e910005143df3ca0217b0978dbd1075888201)                        | URDF/Xacro and meshes for MIMIK's platform.           |
-| [mimik\_robot\_setup](https://github.com/mimik-robotics/mimik_robot_setup/tree/36f4e06f6bc8dbad9c9b7767704d4215d0fdac1e)                       | Bringup/launch/config for lab setups (UR3/FT/vision). |
-| [mimik\_task](https://github.com/mimik-robotics/mimik_task/tree/0d292ffdae3afe3c9a042a925a97654bad6f3257)                                      | Build and execute the three biology protocols.        |
-| [mimik\_ur\_launch](https://github.com/mimik-robotics/mimik_ur_launch/tree/1b03a0d07bea1a59c11d3ad2222c5efb044002fe)                           | UR-specific launch files and configs.                 |
-| [mimik\_vision](https://github.com/mimik-robotics/mimik_vision/tree/fa4a34bde8224de6c0f289b6d0f7acef41cb161d)                                  | Vision nodes/pipeline utilities.                      |
+| [oscar\_description](https://github.com/rodrigue-laboratory/oscar_description)                                                                 | URDF/Xacro and meshes for the OSCAR platform.         |
+| [oscar\_robot\_setup](https://github.com/rodrigue-laboratory/oscar_robot_setup)                                                                | Bringup/launch/config for lab setups (UR3/FT/vision). |
+| [oscar\_task](https://github.com/rodrigue-laboratory/oscar_task)                                                                               | Build and execute the three biology protocols.        |
+| [oscar\_ur\_launch](https://github.com/rodrigue-laboratory/oscar_ur_launch)                                                                    | UR-specific launch files and configs.                 |
+| [oscar\_vision](https://github.com/rodrigue-laboratory/oscar_vision)                                                                           | Vision nodes/pipeline utilities.                      |
 | [moveit](https://github.com/captain-yoshi/moveit/tree/ba67fc38b78363caa4f4c5068833276b5e5c8b1c)                                                | MoveIt (motion planning framework).                   |
 | [moveit\_task\_constructor](https://github.com/captain-yoshi/moveit_task_constructor/tree/0b00477808c216853594dc5cd27bf0df1761b93d)            | MoveIt Task Constructor (task planning).              |
 | [pipette-tool-cad](https://github.com/UdeS-Biology-Cobot/pipette-tool-cad)                                                                     | Pipette tool CAD drawings.                            |
@@ -80,4 +80,4 @@ $ source ~/.bashrc
 
 ## Run
 
-Follow this [Guide](https://github.com/mimik-robotics/mimik_task/tree/3965381e2ef193a75d14a7405bae84c68aa7f3be).
+Follow this [Guide](https://github.com/rodrigue-laboratory/oscar_task).

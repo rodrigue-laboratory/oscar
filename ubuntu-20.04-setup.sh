@@ -87,11 +87,11 @@ mapfile -t REPOS <<'EOF'
 cartesian_controllers,https://github.com/captain-yoshi/cartesian_controllers.git,c1526e5d7abed7066e93afded14b0eb7c1e49a3e
 control_msgs,https://github.com/captain-yoshi/control_msgs.git,c776cc61bcfa32ac3b1cbf107050abbcb66e8f59
 deterministic_trac_ik,https://github.com/captain-yoshi/deterministic_trac_ik.git,f80c3d472f5b7dd98c12a9aa33b2d7804efe23c2
-mimik_description,https://github.com/mimik-robotics/mimik_description.git,730e910005143df3ca0217b0978dbd1075888201
-mimik_robot_setup,https://github.com/mimik-robotics/mimik_robot_setup.git,36f4e06f6bc8dbad9c9b7767704d4215d0fdac1e
-mimik_task,https://github.com/mimik-robotics/mimik_task.git,0d292ffdae3afe3c9a042a925a97654bad6f3257
-mimik_ur_launch,https://github.com/mimik-robotics/mimik_ur_launch.git,1b03a0d07bea1a59c11d3ad2222c5efb044002fe
-mimik_vision,https://github.com/mimik-robotics/mimik_vision.git,fa4a34bde8224de6c0f289b6d0f7acef41cb161d
+oscar_description,https://github.com/rodrigue-laboratory/oscar_description.git,5dd12f763df3649ab6e67ee6bf20d27248ba886a
+oscar_robot_setup,https://github.com/rodrigue-laboratory/oscar_robot_setup.git,002e4989fda6f1a3f9e895f4f41092cff767fe27
+oscar_task,https://github.com/rodrigue-laboratory/oscar_task.git,ca4d7151bd63eb4faa6fa2ca988b488082e3be42
+oscar_ur_launch,https://github.com/rodrigue-laboratory/oscar_ur_launch.git,1bb7438f01a05081d9f3c61261d127eac1b8d3aa
+oscar_vision,https://github.com/rodrigue-laboratory/oscar_vision.git,13138e5797beed3572e62d208c5fa26db00c8afc
 moveit,https://github.com/captain-yoshi/moveit.git,ba67fc38b78363caa4f4c5068833276b5e5c8b1c
 moveit_task_constructor,https://github.com/captain-yoshi/moveit_task_constructor.git,0b00477808c216853594dc5cd27bf0df1761b93d
 realsense_ros,https://github.com/IntelRealSense/realsense-ros.git,b14ce433d1cccd2dfb1ab316c0ff1715e16ab961
@@ -191,7 +191,7 @@ sudo apt install -y \
   librealsense2-gl="$RS2_VERSION"
 sudo apt-mark hold librealsense2 librealsense2-dev librealsense2-utils librealsense2-udev-rules librealsense2-gl
 
-# mimik_robot_setup_description
+# oscar_robot_setup_description
 sudo apt install -y ros-noetic-ur-description
 sudo apt install ros-noetic-moveit-resources-panda-description
 
